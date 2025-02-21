@@ -1,0 +1,110 @@
+/* General Styles */
+.products-page {
+    width: 100%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    background-color: white;
+    border: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animated Title */
+.title-overlay {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    color: #333;
+    border: none;
+}
+
+/* Letter Animation */
+.letter {
+    color: #007bff;
+    font-weight: bold;
+    animation: colorWave 2s infinite alternate;
+    border: none;
+}
+
+/* Keyframes for Animation */
+@keyframes colorWave {
+    0% {
+        color: #007bff;
+    }
+
+    100% {
+        color: #0056b3;
+    }
+}
+
+/* Products Gallery */
+.products-gallery {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    border: none;
+}
+
+/* Product Item */
+.product-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Title */
+.product-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    border: none;
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
